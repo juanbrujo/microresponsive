@@ -1,4 +1,6 @@
 microresponsive
 ===============
 
-Micro-Responsive Framework
+Micro-Responsive CSS Framework
+
+*Work in progress*
