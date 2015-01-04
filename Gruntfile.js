@@ -17,7 +17,8 @@ module.exports = function(grunt) {
 				banner: '<%= meta.banner %>'
 	      	},
 	        files: {
-	            'dist/css/microresponsive.min.css': 'src/less/microresponsive.less'
+	            'dist/css/microresponsive.min.css': 'src/less/microresponsive.less',
+	            'dist/css/demo.css': 'src/less/demo.less'
 	        }
 	      } 
 	    },

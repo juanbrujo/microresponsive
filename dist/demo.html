@@ -1,20 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/microresponsive.min.css">
+	<meta charset="UTF-8">
+	<title>Micro-Responsive CSS Framework</title>
+	<link rel="stylesheet" href="css/microresponsive.min.css">
+	<link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
 
-  <i>Desktop / Tablet / Mobile classes:</i>
-
-  <div class="desktop-only">desktop-only</div>
-  <div class="tablet-only">tablet-only</div>
-  <div class="mobile-only">mobile-only</div>
-
-  <i>Combinated:</i>
-
-  <div class="desktop-only tablet-only">.desktop-only.tablet-only</div>
-  <div class="tablet-only mobile-only">.tablet-only.mobile-only</div>
-
+	<section class="desktop desktop-only">
+		<h2>class="desktop-only"</h2>
+		<p>This will be displayed only in desktop breakpoint:</p>
+		<pre>@media only screen and (min-width: 950px)</pre>
+	</section>
+	<section class="tablet tablet-only">
+		<h2>class="tablet-only"</h2>
+		<p>This will be displayed only in tablet breakpoints:</p>
+		<pre>@media only screen and (min-width: 530px) and (max-width: 949px)</pre>
+	</section>
+	<section class="mobile mobile-only">
+		<h2>class="mobile-only"</h2>
+		<p>This will be displayed only in mobile breakpoint:</p>
+		<pre>@media only screen and (max-width: 529px)</pre>
+	</section>
+	<section class="combined desktop-only tablet-only">
+		<h2>class="desktop-only tablet-only"</h2>
+		<p>You can also combine them, so this will be displayed in desktop & tablet breakpoints</p>
+	</section>
+	<section class="combined tablet-only mobile-only">
+		<h2>class="tablet-only mobile-only"</h2>
+		<p>You can also combine them, so this will be displayed in tablet & mobile breakpoints</p>
+	</section>
+	<div>
+		<h1>What's this </h1>
+		<p><b>Micro-Responsive CSS Framework</b> is a set of <b>CSS</b> classes that helps fast-prototype responsive interfaces. It is <b>only 0.6kb</b> and includes support for <em>desktop, tablet and mobile mediaqueries</em>. The game is simple: add the proper class if you need/want a certain <b>HTML</b> tag be visible or not.</p>
+		<p><a href="https://github.com/juanbrujo/microresponsive" target="_blank" class="button">Watch this in Github</a></p>
+		<h3>Example:</h3>
+		<pre>&lt;div class="mobile-only"&gt;
+	this will be visible only in mobile devices with (max-width: 529px)
+&lt;/div&gt;</pre>
+		<p>You can also combine them:</p>
+		<pre>&lt;div class="desktop-only tablet-only"&gt;
+	this will be displayed in desktop & tablet breakpoints
+&lt;/div&gt;</pre>
+		<h3>Use:</h3>
+		<p>Place <code>microresponsive.min.css</code> or it content in your project. Use the <b>CSS</b> classes as needed:</p>
+		<ul>
+			<li>desktop-only: <code>@media only screen and (min-width: 950px)</code></li>
+			<li>tablet-only: <code>@media only screen and (min-width: 530px) and (max-width: 949px)</code></li>
+			<li>mobile-only: <code>@media only screen and (max-width: 529px)</code></li>
+		</ul>
+		<h3>Disclaimer:</h3>
+		<p>I recommend use this only in prototype phase of a project,  not in production. Why? Simple: showing and hiding <b>HTML</b> elements can damage your <b>SEO</b> intentions. But if you don't care about <b>SEO</b>, go and enjoy this.</p>
+	</div>
+	
+	
 </body>
 </html>
