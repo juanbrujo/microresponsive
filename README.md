@@ -1,5 +1,7 @@
 #Micro-Responsive CSS Framework
 
+![](https://dl.dropboxusercontent.com/u/3522/microresponsive2.gif)
+
 **Micro-Responsive CSS Framework** is a set of **CSS** classes that helps fast-prototype responsive interfaces. It is **only 0.6kb** and includes support for *desktop, tablet and mobile mediaqueries*. The game is simple: add the proper class if you need/want a certain **HTML** tag be visible or not.
 
 ###Example:
