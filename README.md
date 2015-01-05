@@ -22,6 +22,9 @@ Place **microresponsive.min.css** or it content in your project. Use the **CSS**
 - tablet-only: `@media only screen and (min-width: 530px) and (max-width: 949px)`
 - mobile-only: `@media only screen and (max-width: 529px)`
 
+###Demo:
+[https://github.com/juanbrujo/microresponsive/blob/master/dist/demo.html](https://github.com/juanbrujo/microresponsive/blob/master/dist/demo.html)
+
 ###Disclaimer:
 
 I recommend use this only in prototype phase of a project, not in production. Why? Simple: showing and hiding **HTML** elements can damage your **SEO** intentions. But if you don't care about **SEO**, go and enjoy this.
